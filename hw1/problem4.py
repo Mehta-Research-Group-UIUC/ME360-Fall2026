@@ -9,7 +9,7 @@ def signal(time):
     y = np.zeros(time.shape)
     for i, t in enumerate(time):
         if t >= 0:
-            y[i] = (np.sin(t))**3
+            y[i] = (np.sin(t))**2
     return y
 
 t = np.linspace(-3, 22, 1000)
