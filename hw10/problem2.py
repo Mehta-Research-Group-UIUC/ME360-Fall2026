@@ -1,7 +1,4 @@
 ### Copy and paste the code from your designed filter function here in this file. ###
-from scipy import signal
-import numpy as np
-from numpy.typing import NDArray
 
 
 def print_transfer_function(b: NDArray, a: NDArray) -> None:
