@@ -8,7 +8,8 @@ from problem2 import design_filter
 
 def main() -> None:
     ecg_noisy, ecg_clean = load_ecg_signals()
-    b, a = design_filter()
+    sos = design_filter()
+    b, a = signal.sos2tf(sos)
     noisy_signal = ecg_noisy
 
     # change the following lfilter to filtfilt to have zero-phase filtering
